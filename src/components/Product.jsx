@@ -106,7 +106,7 @@ function Product({ cart, setCart }) {
                                     {color.thumbnail ? (
                                         <img
                                             className="colors-thumbnail"
-                                            src={color.thumbnail}
+                                            src={`${process.env.PUBLIC_URL}${color.thumbnail}`}
                                             alt={color.name[index]}
                                         />
                                     ) : (

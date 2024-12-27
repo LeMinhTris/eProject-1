@@ -53,7 +53,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <div className="contact-banner"><img src="/images/Banner-contact.webp" alt="" /></div>
+      <div className="contact-banner"><img src={`${process.env.PUBLIC_URL}/images/Banner-contact.webp`} alt="" /></div>
       <div className="container">
         <div className="map-section">
           <iframe

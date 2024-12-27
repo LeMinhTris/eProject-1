@@ -61,7 +61,7 @@ function ProductCard({ product }) {
                             {color.thumbnail ? (
                                 <img
                                     className="color-thumbnail"
-                                    src={color.thumbnail}
+                                    src={`${process.env.PUBLIC_URL}${color.thumbnail}`}
                                     alt={color.name[index]}
                                 />
                             ) : (
