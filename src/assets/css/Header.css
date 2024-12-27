@@ -24,7 +24,8 @@
 
 .nav {
     display: grid;
-    
+    position: fixed;
+    transition: transform 0.1s ease-in-out, opacity 0.3s ease-in-out;
     grid-template-columns: 25% 50% 25%;
     background-color: white;
     width: 100%;
@@ -54,14 +55,18 @@
 
 .nav.fixed {
     position: fixed;
-    transition: transform 0.5s ease, position 0.1s ease-in-out;
     top: 0;
-
-    transform: translateY(-100%); 
+    width: 100%;
+    transform: translateY(-100%);
 }
 
 .nav.fixed.visible {
-    transform: translateY(0); 
+    transform: translateY(0);
+    opacity: 1; 
+}
+.nav:not(.fixed) {
+    opacity: 1;
+    transform:  translateY(0);
 }
 .nav ul {
     display: flex;
