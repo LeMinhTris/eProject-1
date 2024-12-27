@@ -21,7 +21,7 @@ function Ace() {
                 </div>
                 <div className="intro-item">
                     <div className="title">
-                        <img src="/images/ace-logo.webp" alt="Ace" />
+                        <img src={`${process.env.PUBLIC_URL}/images/ace-logo.webp`} alt="Ace" />
                         <p>
                             Endless inspiration from the essence of Japanese
                             culture
@@ -29,14 +29,14 @@ function Ace() {
                     </div>
                     <div className="body">
                         <div className="row">
-                            <img src="/images/ace01.webp" alt="" />
-                            <img src="/images/ace02.jpg" alt="" />
-                            <img src="/images/ace03.jpg" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace01.webp`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace02.jpg`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace03.jpg`} alt="" />
                         </div>
                         <div className="row">
-                            <img src="/images/ace04.webp" alt="" />
-                            <img src="/images/ace05.jpg" alt="" />
-                            <img src="/images/ace06.webp" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace04.webp`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace05.jpg`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace06.webp`} alt="" />
                         </div>
                     </div>
                 </div>
@@ -87,20 +87,20 @@ function Ace() {
                         </div>
                     </div>
                     <div className="info-1-item">
-                        <img src="/images/info-1-img.webp" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/info-1-img.webp`} alt="" />
                     </div>
                 </div>
             </div>
             <div className="info-2">
                 <div className="content">
-                    <img src="/images/ace08.jpg" alt="" />
-                    <img src="/images/ace09.webp" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/ace08.jpg`} alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/ace09.webp`} alt="" />
                 </div>
             </div>
             <div className="info-3">
                 <div className="content">
                     <div className="info-3-item">
-                        <img src="/images/ace10.webp" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/ace10.webp`} alt="" />
                     </div>
                     <div className="info-3-item">
                         <h2 className="title">
@@ -124,7 +124,7 @@ function Ace() {
                                 designs.
                             </p>
 
-                            <img src="/images/ace11.webp" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/ace11.webp`} alt="" />
                             <p>
                                 The distinctive dot (.) at the end of the brand
                                 name symbolizes that spirit; it represents how

@@ -16,12 +16,12 @@ function AmericanTourister() {
                             <p>It can be said that the history of Samsonite's development is closely tied to the history of travel because: In 1910, travel was very rudimentary and only accessible to a few who wanted to explore the world. The first suitcases were entirely handmade, primarily based on the principle of durability and the ability to endure strong impacts from long journeys for a small, wealthy clientele. </p>
                         </div>
                         <div className="row__img">
-                            <img src="/images/Samsonite_01.jpg" alt="" />
-                            <img src="/images/Samsonite_02.jpg" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/Samsonite_01.jpg`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/images/Samsonite_02.jpg`} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="slider"><img src="/images/Samsonite_03.jpg" alt="" /></div>
+                <div className="slider"><img src={`${process.env.PUBLIC_URL}/images/Samsonite_03.jpg`} alt="" /></div>
                 <div className="content">
                     <div className="content__row">
                         <div className="youtube">

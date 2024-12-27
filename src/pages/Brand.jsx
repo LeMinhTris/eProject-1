@@ -19,12 +19,12 @@ function Brand() {
         {brands.map((brand) => (
           <div key={brand.id} className="gallery-item">
             <img
-              src={brand.background}
+              src={`${process.env.PUBLIC_URL}${brand.background}`}
               alt={`Background of ${brand.name}`}
               className="gallery-image"
             />
             <img
-              src={brand.name}
+              src={`${process.env.PUBLIC_URL}${brand.name}`}
               alt={`Logo of ${brand.name}`}
               className="brand-name"
             />

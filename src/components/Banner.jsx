@@ -69,7 +69,7 @@ function Banner() {
             </div>
             <div className={`slider ${slideDirection}`}>
                 <img 
-                    src={bannerImg[currentIndex]} 
+                    src={`${process.env.PUBLIC_URL}${bannerImg[currentIndex]}`} 
                     alt={`Banner ${currentIndex + 1}`}
                     key={currentIndex}
                 />
