@@ -39,26 +39,45 @@ function Header() {
     }
     const [cartCount, setCartCount] = useState(0);
     const menuRef = useRef(null);
+
+    //navbar effect
+    useEffect(() => {
     let isNavbarFixed = false;
-    window.addEventListener("scroll", () => {
+
+    const handleScroll = () => {
         const navbar = document.querySelector(".nav");
         const currentScrollY = window.scrollY;
+
         if (currentScrollY > 400) {
             if (!isNavbarFixed) {
-                navbar.classList.add("fixed");
-                setTimeout(() => navbar.classList.add("visible"), 100);
+                navbar.classList.add("fixed", "visible");
                 isNavbarFixed = true;
             }
         } else {
             if (isNavbarFixed) {
                 navbar.classList.remove("visible");
-                setTimeout(() => navbar.classList.remove("fixed"), 300);
+                navbar.addEventListener(
+                    "transitionend",
+                    () => {
+                        if (!navbar.classList.contains("visible")) {
+                            navbar.classList.remove("fixed");
+                        }
+                    },
+                    { once: true } 
+                );
                 isNavbarFixed = false;
             }
         }
-    });
-    const [menuOpen, setMenuOpen] = useState(false);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+}, []);
+
+    const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = (e) => {
         e.stopPropagation();
         setMenuOpen(!menuOpen);
@@ -70,17 +89,29 @@ function Header() {
     };
 
     useEffect(() => {
+        const handleScrollOrClickOutside = (e) => {
+            if (
+                menuRef.current &&
+                (!menuRef.current.contains(e.target) || e.type === "scroll")
+            ) {
+                setMenuOpen(false);
+            }
+        };
+    
         if (menuOpen) {
-            document.addEventListener("click", closeMenuOnOutsideClick);
+            document.addEventListener("click", handleScrollOrClickOutside);
+            document.addEventListener("scroll", handleScrollOrClickOutside);
         } else {
-            document.removeEventListener("click", closeMenuOnOutsideClick);
+            document.removeEventListener("click", handleScrollOrClickOutside);
+            document.removeEventListener("scroll", handleScrollOrClickOutside);
         }
-
+    
         return () => {
-            document.removeEventListener("click", closeMenuOnOutsideClick);
+            document.removeEventListener("click", handleScrollOrClickOutside);
+            document.removeEventListener("scroll", handleScrollOrClickOutside);
         };
     }, [menuOpen]);
-
+    //
     useEffect(() => {
         setCartCount(cart.length);
     }, [cart]);
@@ -94,7 +125,7 @@ function Header() {
             <nav className="nav">
                 <div className="nav__logo">
                     <Link to="/">
-                        <img src="/icon/logo.png" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/icon/logo.png`} alt="" />
                     </Link>
                 </div>
                 <div

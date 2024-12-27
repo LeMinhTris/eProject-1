@@ -4,24 +4,24 @@ function ProductOfWeb() {
     return (
         <div className="product-of-web">
             <h2 className="header">
-                PRODUCTS OF HOUSE OF LUGGAGE
+                PRODUCTS OF BRONX LUGGAGE
             </h2>
             <div className="container">
                 <div className="item-product">
                     <Link to='/Vali'>
-                        <img src="/images/item-of-web1.webp" alt="vali" />
+                        <img src={`${process.env.PUBLIC_URL}/images/item-of-web1.webp`} alt="vali" />
                         <span className="name">Suitcase</span>
                     </Link>
                 </div>
                 <div className="item-product">
                     <Link to='/Balo'>
-                        <img src="/images/item-of-web2.webp" alt="balo" />
+                        <img src={`${process.env.PUBLIC_URL}/images/item-of-web2.webp`} alt="balo" />
                         <span className="name">Backpack</span>
                     </Link>
                 </div>
                 <div className="item-product">
                     <Link to='/Handbag'>
-                        <img src="/images/item-of-web3.webp" alt="bag" />
+                        <img src={`${process.env.PUBLIC_URL}/images/item-of-web3.webp`} alt="bag" />
                         <span className="name">Handbag</span>
                     </Link>
                 </div>

@@ -58,7 +58,7 @@ function Cart({ cart, setCart }) {
                             <div key={index} className='cart-item'>
                                 <img 
                                     className='cart-item__img'
-                                    src={item.image} 
+                                    src={`${process.env.PUBLIC_URL}${item.image}`}
                                     alt={item.name}
                                 />
                                 <div className='cart-info'>

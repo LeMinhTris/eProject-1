@@ -71,7 +71,7 @@ function Contact() {
             Company address: Floor 17, Vincom Center Building, 72 Le Thanh Ton,
             Ben Nghe Ward, District 1, Ho Chi Minh City
           </p>
-          <p>Email: info@houseofluggage.vn</p>
+          <p>Email: info@Bronxluggage.vn</p>
           <p>Phone: 028.3934.3506 - 1800.6063</p>
           <p>Working hours: Monday to Friday, 8:00 AM to 12:30 PM</p>
 

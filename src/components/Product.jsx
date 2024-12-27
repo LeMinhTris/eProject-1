@@ -69,12 +69,12 @@ function Product({ cart, setCart }) {
                 <div className="col-1">
                     <div className="product__img">
                         <img
-                            src={selectedColor.image}
+                            src={`${process.env.PUBLIC_URL}${selectedColor.image}`}
                             alt={`${product.name} - ${selectedColor.name}`}
                         />
                         <img
                             className="reverse"
-                            src={selectedColor.image}
+                            src={`${process.env.PUBLIC_URL}${selectedColor.image}`}
                             alt={`${product.name} - ${selectedColor.name}`}
                         />
                     </div>
@@ -156,19 +156,19 @@ function Product({ cart, setCart }) {
                         </div>
                         <div className="info-store">
                             <div className="item">
-                                <img src="/images/bh.webp" alt="bh" />
+                                <img src={`${process.env.PUBLIC_URL}/images/bh.webp`} alt="bh" />
                                 <p>Nationwide warranty</p>
                             </div>
                             <div className="item">
-                                <img src="/images/ck.webp" alt="ck" />
+                                <img src={`${process.env.PUBLIC_URL}/images/ck.webp`} alt="ck" />
                                 <p>Cam kết chính hãng</p>
                             </div>
                             <div className="item">
-                                <img src="/images/td.webp" alt="td" />
+                                <img src={`${process.env.PUBLIC_URL}/images/td.webp`} alt="td" />
                                 <p>Free customer care hotline</p>
                             </div>
                             <div className="item">
-                                <img src="/images/store.webp" alt="store" />
+                                <img src={`${process.env.PUBLIC_URL}/images/store.webp`} alt="store" />
                                 <p>
                                     Warranty at more than 100 stores nationwide
                                 </p>

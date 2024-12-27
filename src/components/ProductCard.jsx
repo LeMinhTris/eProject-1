@@ -29,7 +29,7 @@ function ProductCard({ product }) {
         >
             <div className="product-card__img">
                 <img
-                    src={selectedColor.image}
+                    src={`${process.env.PUBLIC_URL}${selectedColor.image}`}
                     alt={`${product.name} - ${selectedColor.name}`}
                     onClick={() => navigate(`/Product/${product.id}`)}
                 />
