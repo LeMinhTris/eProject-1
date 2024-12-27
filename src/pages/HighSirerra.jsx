@@ -5,7 +5,7 @@ function HighSirerra() {
     <div className="HighSirerra">
       <div className="container">
         <div className="slider">
-          <img src="/images/Slider-high-sierra-01.webp" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/Slider-high-sierra-01.webp`} alt="" />
         </div>
         <h1 className="title">High Sierra</h1>
         <div className="line-title"></div>
@@ -22,8 +22,8 @@ function HighSirerra() {
               </p>
             </div>
             <div className="row__img">
-              <img src="/images/img-high-sierra-01.webp" alt="" />
-              <img src="/images/img-high-sierra-02.png" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-high-sierra-01.webp`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-high-sierra-02.png`} alt="" />
             </div>
           </div>
         </div>

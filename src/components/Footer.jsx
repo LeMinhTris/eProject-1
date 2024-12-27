@@ -9,7 +9,7 @@ const Footer = () => {
                 {/* Column 1 */}
                 <div className="footer-column column1">
                     <img
-                        src="/icon/logo.png"
+                        src={`${process.env.PUBLIC_URL}/icon/logo.png`}
                         alt="House of Luggage"
                         className="footer-logo"
                     />
@@ -23,7 +23,7 @@ const Footer = () => {
                         </a>.
                     </p>
                     <img
-                        src="/icon/boCongThuong.jpg"
+                        src={`${process.env.PUBLIC_URL}/icon/boCongThuong.jpg`}
                         alt="Certified by the Ministry of Industry and Trade"
                         className="footer-verified"
                     />

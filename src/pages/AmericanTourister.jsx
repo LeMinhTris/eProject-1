@@ -5,7 +5,7 @@ function AmericanTourister() {
     <div className="AmericanTourister">
       <div className="container">
         <div className="slider">
-          <img src="/images/Slider-american-tourister-01.jpg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/Slider-american-tourister-01.jpg`} alt="" />
         </div>
         <h1 className="title">American Tourister</h1>
         <div className="line-title"></div>
@@ -63,7 +63,7 @@ function AmericanTourister() {
           </div>
         </div>
         <div className="slider">
-          <img src="/images/Slider-american-tourister-02.webp" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/Slider-american-tourister-02.webp`} alt="" />
         </div>
         <div className="content">
           <div className="content__row">

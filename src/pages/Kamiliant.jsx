@@ -5,7 +5,7 @@ function Kamiliant() {
     <div className="Kamiliant">
       <div className="container">
         <div className="slider">
-          <img src="/images/Slider-kamiliant-01.webp" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/Slider-kamiliant-01.webp`} alt="" />
         </div>
         <h1 className="title">Kamiliant</h1>
         <div className="line-title"></div>
@@ -26,13 +26,13 @@ function Kamiliant() {
               </p>
             </div>
             <div className="row__img">
-              <img src="/images/img-kamiliant-01.webp" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-kamiliant-01.webp`} alt="" />
               <img src="/images/img-kamiliant-02.webp" alt="" />
             </div>
           </div>
         </div>
         <div className="slider">
-          <img src="/images/Slider-kamiliant-02.webp" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/images/Slider-kamiliant-02.webp`} alt="" />
         </div>
         <div className="content">
           <div className="content__row">
