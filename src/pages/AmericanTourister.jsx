@@ -57,8 +57,8 @@ function AmericanTourister() {
               </p>
             </div>
             <div className="row__img">
-              <img src="/images/img-american-tourister-01.webp" alt="" />
-              <img src="/images/img-american-tourister-02.jpg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-american-tourister-01.webp`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-american-tourister-02.jpg`} alt="" />
             </div>
           </div>
         </div>

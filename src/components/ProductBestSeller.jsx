@@ -8,7 +8,7 @@ function ProductBestSeller() {
     return ( 
         <div className="best-seller">
             <h2 className="title">
-                <img src={`${process.env.PUBLIC_URL}/images/top-prod-week.webp`} alt="" />
+                <img src={`${process.env.PUBLIC_URL}/images/top-prod-week.png`} alt="" />
             </h2>
             <div className="container">
                 {displayedProduct.map((product) => (

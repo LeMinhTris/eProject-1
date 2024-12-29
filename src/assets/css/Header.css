@@ -171,7 +171,7 @@
 }
 /* end loginnnnnnnnnnn */
 
-@media (max-width: 1500px) {
+@media (max-width: 1650px) {
     .nav-menu {
         display: flex;
         justify-content: center;
@@ -196,6 +196,7 @@
     .nav {
         display: flex;
         justify-content: space-between;
+        height: 64px;
     }
     .nav-toggle {
         display: flex; 
