@@ -16,7 +16,7 @@ function Product({ cart, setCart }) {
         return (
             <div className="not-selectedColor">
                 <h2 className="header">{product.name}</h2>
-                <p className="text">Sản phẩm này hiện không có màu khả dụng.</p>
+                <p className="text">This product is currently not available in any color.</p>
             </div>
         );
     }
@@ -161,7 +161,7 @@ function Product({ cart, setCart }) {
                             </div>
                             <div className="item">
                                 <img src={`${process.env.PUBLIC_URL}/images/ck.webp`} alt="ck" />
-                                <p>Cam kết chính hãng</p>
+                                <p>Genuine commitment</p>
                             </div>
                             <div className="item">
                                 <img src={`${process.env.PUBLIC_URL}/images/td.webp`} alt="td" />

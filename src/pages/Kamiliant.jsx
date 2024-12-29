@@ -27,7 +27,7 @@ function Kamiliant() {
             </div>
             <div className="row__img">
               <img src={`${process.env.PUBLIC_URL}/images/img-kamiliant-01.webp`} alt="" />
-              <img src="/images/img-kamiliant-02.webp" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/images/img-kamiliant-02.webp`} alt="" />
             </div>
           </div>
         </div>
