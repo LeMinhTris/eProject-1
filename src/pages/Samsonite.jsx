@@ -4,7 +4,7 @@ function AmericanTourister() {
     return (
         <div className="AmericanTourister">
             <div className="container">
-                <div className="slider"><img src="/images/Slider-Samsonite.jpg" alt="" /></div>
+                <div className="slider"><img src={`${process.env.PUBLIC_URL}/images/Slider-Samsonite.jpg`} alt="" /></div>
                 <h1 className='title'>SAMSONITE</h1>
                 <div className="line-title"></div>
                 <div className="brand-info">SAMSONITE - THE BRAND OF MOVEMENT</div>
